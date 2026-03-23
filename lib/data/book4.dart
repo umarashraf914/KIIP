@@ -4,7 +4,7 @@ final book4 = VocabularyBook(
   title: 'KIIP Book 4',
   subtitle: '한국어와 한국문화 중급 2',
   chapters: [
-    VocabularyChapter(title: 'Chapter 1: 한국 생활 적응 (Adapting to Life in Korea)', words: [
+    VocabularyChapter(title: 'Chapter 1: 한국 생활 적응', words: [
       VocabularyWord(korean: '부푼 꿈', english: 'Swollen/High hopes'),
       VocabularyWord(korean: '설레다', english: 'To be excited/have butterflies'),
       VocabularyWord(korean: '거든 다 할 수 있을 것 같다', english: 'To feel like one can do anything'),
@@ -67,7 +67,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '상황', english: 'Situation'),
       VocabularyWord(korean: '기회를 잡다', english: 'To seize an opportunity'),
     ]),
-    VocabularyChapter(title: 'Chapter 2: 가족의 변화 (Changes in the Family)', words: [
+    VocabularyChapter(title: 'Chapter 2: 가족의 변화', words: [
       VocabularyWord(korean: '대가족', english: 'Large family'),
       VocabularyWord(korean: '핵가족', english: 'Nuclear family'),
       VocabularyWord(korean: '부모님을 모시다', english: 'To live with and look after one\'s parents'),
@@ -138,7 +138,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '세심하다', english: 'To be meticulous/attentive'),
       VocabularyWord(korean: '시급하다', english: 'To be urgent'),
     ]),
-    VocabularyChapter(title: 'Chapter 3: 생활 속의 과학 (Science in Daily Life)', words: [
+    VocabularyChapter(title: 'Chapter 3: 생활 속의 과학', words: [
       VocabularyWord(korean: '인공 지능(AI)', english: 'Artificial Intelligence (AI)'),
       VocabularyWord(korean: '로봇 청소기', english: 'Robot vacuum cleaner'),
       VocabularyWord(korean: '인공 지능 스피커', english: 'AI speaker / Smart speaker'),
@@ -168,7 +168,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '주목받다', english: 'To receive attention'),
       VocabularyWord(korean: '기대하다', english: 'To expect/anticipate'),
     ]),
-    VocabularyChapter(title: 'Chapter 4: 한국의 의례 (Korean Ceremonies)', words: [
+    VocabularyChapter(title: 'Chapter 4: 한국의 의례', words: [
       VocabularyWord(korean: '결혼식장', english: 'Wedding hall'),
       VocabularyWord(korean: '신랑', english: 'Groom'),
       VocabularyWord(korean: '신부', english: 'Bride'),
@@ -214,7 +214,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '효도', english: 'Filial piety'),
       VocabularyWord(korean: '정겹다', english: 'To be warm-hearted/friendly'),
     ]),
-    VocabularyChapter(title: 'Chapter 5: 문화유산 (Cultural Heritage)', words: [
+    VocabularyChapter(title: 'Chapter 5: 문화유산', words: [
       VocabularyWord(korean: '문화유산', english: 'Cultural heritage'),
       VocabularyWord(korean: '자연 유산', english: 'Natural heritage'),
       VocabularyWord(korean: '무형 유산', english: 'Intangible heritage'),
@@ -254,7 +254,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '조각상', english: 'Statue'),
       VocabularyWord(korean: '진지하다', english: 'To be serious'),
     ]),
-    VocabularyChapter(title: 'Chapter 6: 국제화 시대 (The Age of Internationalization)', words: [
+    VocabularyChapter(title: 'Chapter 6: 국제화 시대', words: [
       VocabularyWord(korean: '국제 협력 단체가 늘어나다', english: 'The number of international cooperation organizations is increasing'),
       VocabularyWord(korean: '국제 교류가 활발해지다', english: 'International exchange is becoming more active'),
       VocabularyWord(korean: '다문화 사회가 되다', english: 'To become a multicultural society'),
@@ -299,7 +299,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '기회', english: 'Opportunity'),
       VocabularyWord(korean: '받아들이다', english: 'To accept'),
     ]),
-    VocabularyChapter(title: 'Chapter 7: 현대인의 질병 (Modern Diseases)', words: [
+    VocabularyChapter(title: 'Chapter 7: 현대인의 질병', words: [
       VocabularyWord(korean: '고열이 나다', english: 'To have a high fever'),
       VocabularyWord(korean: '재채기를 하다', english: 'To sneeze'),
       VocabularyWord(korean: '목이 따끔거리다', english: 'To have a scratchy throat'),
@@ -332,7 +332,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '과도하다', english: 'To be excessive'),
       VocabularyWord(korean: '권하다', english: 'To recommend'),
     ]),
-    VocabularyChapter(title: 'Chapter 8: 정보화 사회 (Information Society)', words: [
+    VocabularyChapter(title: 'Chapter 8: 정보화 사회', words: [
       VocabularyWord(korean: '전송하다', english: 'To transmit/send'),
       VocabularyWord(korean: '댓글', english: 'Comment'),
       VocabularyWord(korean: '접속하다', english: 'To connect/access'),
@@ -365,7 +365,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '유용하다', english: 'To be useful'),
       VocabularyWord(korean: '소홀하다', english: 'To be negligent/inattentive'),
     ]),
-    VocabularyChapter(title: 'Chapter 9: 사건과 사고 (Incidents and Accidents)', words: [
+    VocabularyChapter(title: 'Chapter 9: 사건과 사고', words: [
       VocabularyWord(korean: '넘어지다', english: 'To fall down'),
       VocabularyWord(korean: '미끄러지다', english: 'To slip'),
       VocabularyWord(korean: '물에 빠지다', english: 'To fall into the water'),
@@ -415,7 +415,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '번지다', english: 'To spread'),
       VocabularyWord(korean: '신속하다', english: 'To be prompt/swift'),
     ]),
-    VocabularyChapter(title: 'Chapter 10: 언어생활 (Language Life)', words: [
+    VocabularyChapter(title: 'Chapter 10: 언어생활', words: [
       VocabularyWord(korean: '언어 예절을 지키다', english: 'To observe language etiquette'),
       VocabularyWord(korean: '올바른 언어를 사용하다', english: 'To use correct language'),
       VocabularyWord(korean: '때와 장소에 맞게 말하다', english: 'To speak appropriately for the time and place'),
@@ -468,7 +468,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '미디어', english: 'Media'),
       VocabularyWord(korean: '지양하다', english: 'To avoid'),
     ]),
-    VocabularyChapter(title: 'Chapter 11: 교육 제도 (Education System)', words: [
+    VocabularyChapter(title: 'Chapter 11: 교육 제도', words: [
       VocabularyWord(korean: '국립/공립', english: 'National/Public'),
       VocabularyWord(korean: '국가', english: 'Nation/Country'),
       VocabularyWord(korean: '지방 공공 단체', english: 'Local public organization'),
@@ -514,7 +514,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '조건', english: 'Condition'),
       VocabularyWord(korean: '진학률', english: 'Rate of advancing to higher education'),
     ]),
-    VocabularyChapter(title: 'Chapter 12: 선거와 투표 (Elections and Voting)', words: [
+    VocabularyChapter(title: 'Chapter 12: 선거와 투표', words: [
       VocabularyWord(korean: '선거', english: 'Election'),
       VocabularyWord(korean: '대선', english: 'Presidential election'),
       VocabularyWord(korean: '총선', english: 'General election'),
@@ -600,7 +600,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '풍부하다', english: 'To be abundant'),
       VocabularyWord(korean: '리더', english: 'Leader'),
     ]),
-    VocabularyChapter(title: 'Chapter 13: 환경 보호 (Environmental Protection)', words: [
+    VocabularyChapter(title: 'Chapter 13: 환경 보호', words: [
       VocabularyWord(korean: '환경이 오염되다', english: 'The environment is polluted'),
       VocabularyWord(korean: '대기 오염이 발생하다', english: 'Air pollution occurs'),
       VocabularyWord(korean: '미세 먼지가 심하다', english: 'Fine dust is severe'),
@@ -653,7 +653,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '석탄', english: 'Coal'),
       VocabularyWord(korean: '힘쓰다', english: 'To make an effort'),
     ]),
-    VocabularyChapter(title: 'Chapter 14: 생활과 경제 (Life and Economy)', words: [
+    VocabularyChapter(title: 'Chapter 14: 생활과 경제', words: [
       VocabularyWord(korean: '물가', english: 'Prices'),
       VocabularyWord(korean: '상승하다', english: 'To rise/increase'),
       VocabularyWord(korean: '하락하다', english: 'To fall/decrease'),
@@ -693,7 +693,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '폭락', english: 'Plummet/Collapse'),
       VocabularyWord(korean: '폭등', english: 'Soar/Skyrocket'),
     ]),
-    VocabularyChapter(title: 'Chapter 15: 법과 질서 (Law and Order)', words: [
+    VocabularyChapter(title: 'Chapter 15: 법과 질서', words: [
       VocabularyWord(korean: '질서를 지키다', english: 'To maintain order'),
       VocabularyWord(korean: '범죄를 저지르다', english: 'To commit a crime'),
       VocabularyWord(korean: '법/법규를 위반하다', english: 'To violate the law/regulations'),
@@ -737,7 +737,7 @@ final book4 = VocabularyBook(
       VocabularyWord(korean: '성숙하다', english: 'To be mature'),
       VocabularyWord(korean: '시민 의식', english: 'Civic consciousness'),
     ]),
-    VocabularyChapter(title: 'Chapter 16: 이민 생활 (Immigrant Life)', words: [
+    VocabularyChapter(title: 'Chapter 16: 이민 생활', words: [
       VocabularyWord(korean: '막막하다', english: 'To be at a loss'),
       VocabularyWord(korean: '갈등을 겪다', english: 'To experience conflict'),
       VocabularyWord(korean: '차별 대우를 당하다', english: 'To be discriminated against'),

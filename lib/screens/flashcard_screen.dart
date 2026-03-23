@@ -1,16 +1,22 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_tts/flutter_tts.dart';
+import 'package:provider/provider.dart';
 import '../models/vocabulary.dart';
+import '../services/bookmark_service.dart';
+import '../services/progress_service.dart';
+import '../services/settings_service.dart';
+import '../services/tts_service.dart';
 
 class FlashcardScreen extends StatefulWidget {
   final VocabularyChapter chapter;
   final Color bookColor;
+  final String bookId;
 
   const FlashcardScreen({
     super.key,
     required this.chapter,
     required this.bookColor,
+    required this.bookId,
   });
 
   @override
@@ -19,21 +25,18 @@ class FlashcardScreen extends StatefulWidget {
 
 class _FlashcardScreenState extends State<FlashcardScreen>
     with TickerProviderStateMixin {
-  late FlutterTts _flutterTts;
+  late TtsService _tts;
   int _currentIndex = 0;
   bool _showAnswer = false;
   late AnimationController _flipController;
   late Animation<double> _flipAnimation;
-  late AnimationController _slideController;
-  late Animation<Offset> _slideAnimation;
-  bool _slidingForward = true;
   int _cardKey = 0;
+  bool _slidingForward = true;
 
   @override
   void initState() {
     super.initState();
-    _flutterTts = FlutterTts();
-    _initTts();
+    _tts = TtsService(context.read<SettingsService>());
 
     _flipController = AnimationController(
       duration: const Duration(milliseconds: 400),
@@ -42,26 +45,10 @@ class _FlashcardScreenState extends State<FlashcardScreen>
     _flipAnimation = Tween<double>(begin: 0, end: 1).animate(
       CurvedAnimation(parent: _flipController, curve: Curves.easeInOut),
     );
-
-    _slideController = AnimationController(
-      duration: const Duration(milliseconds: 300),
-      vsync: this,
-    );
-    _slideAnimation = Tween<Offset>(begin: Offset.zero, end: Offset.zero)
-        .animate(
-          CurvedAnimation(parent: _slideController, curve: Curves.easeOutCubic),
-        );
-  }
-
-  Future<void> _initTts() async {
-    await _flutterTts.setLanguage('ko-KR');
-    await _flutterTts.setSpeechRate(0.4);
-    await _flutterTts.setVolume(1.0);
-    await _flutterTts.setPitch(1.0);
   }
 
   Future<void> _speak(String text) async {
-    await _flutterTts.speak(text);
+    await _tts.speak(text);
   }
 
   void _flipCard() {
@@ -69,10 +56,20 @@ class _FlashcardScreenState extends State<FlashcardScreen>
       _flipController.reverse();
     } else {
       _flipController.forward();
+      _recordStudy();
     }
     setState(() {
       _showAnswer = !_showAnswer;
     });
+  }
+
+  void _recordStudy() {
+    final word = widget.chapter.words[_currentIndex];
+    context.read<ProgressService>().recordStudy(
+      wordId: word.id,
+      chapterId: widget.chapter.id,
+      bookId: widget.bookId,
+    );
   }
 
   void _nextCard() {
@@ -101,9 +98,8 @@ class _FlashcardScreenState extends State<FlashcardScreen>
 
   @override
   void dispose() {
-    _flutterTts.stop();
+    _tts.dispose();
     _flipController.dispose();
-    _slideController.dispose();
     super.dispose();
   }
 
@@ -111,6 +107,8 @@ class _FlashcardScreenState extends State<FlashcardScreen>
   Widget build(BuildContext context) {
     final word = widget.chapter.words[_currentIndex];
     final progress = (_currentIndex + 1) / widget.chapter.words.length;
+    final bookmarks = context.watch<BookmarkService>();
+    final isBookmarked = bookmarks.isBookmarked(word.id);
 
     return Scaffold(
       appBar: AppBar(
@@ -124,62 +122,69 @@ class _FlashcardScreenState extends State<FlashcardScreen>
         centerTitle: true,
         backgroundColor: widget.bookColor,
         foregroundColor: Colors.white,
+        actions: [
+          IconButton(
+            icon: Icon(
+              isBookmarked ? Icons.bookmark : Icons.bookmark_border,
+            ),
+            onPressed: () => bookmarks.toggle(word.id),
+            tooltip: isBookmarked ? 'Remove bookmark' : 'Bookmark word',
+          ),
+        ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(bottom: 30),
-        child: Column(
-          children: [
-            // Progress dots
-            Container(
-              margin: const EdgeInsets.symmetric(vertical: 8),
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              height: 28,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    '${_currentIndex + 1}',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: widget.bookColor,
-                    ),
+      body: Column(
+        children: [
+          // Progress bar
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            height: 28,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  '${_currentIndex + 1}',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: widget.bookColor,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8),
-                    child: SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.5,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(6),
-                        child: LinearProgressIndicator(
-                          value: progress,
-                          backgroundColor: widget.bookColor.withAlpha(30),
-                          valueColor: AlwaysStoppedAnimation<Color>(
-                            widget.bookColor,
-                          ),
-                          minHeight: 8,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(6),
+                      child: LinearProgressIndicator(
+                        value: progress,
+                        backgroundColor: widget.bookColor.withAlpha(30),
+                        valueColor: AlwaysStoppedAnimation<Color>(
+                          widget.bookColor,
                         ),
+                        minHeight: 8,
                       ),
                     ),
                   ),
-                  Text(
-                    '${widget.chapter.words.length}',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: widget.bookColor.withAlpha(120),
-                    ),
+                ),
+                Text(
+                  '${widget.chapter.words.length}',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: widget.bookColor.withAlpha(120),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
+          ),
 
-            // Flashcard with arrows
-            SizedBox(
-              height: 630,
+          // Flashcard - uses Expanded instead of fixed height
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 24),
               child: Row(
                 children: [
-                  // Left arrow
                   IconButton(
                     onPressed: _currentIndex > 0 ? _previousCard : null,
                     icon: Icon(
@@ -190,7 +195,6 @@ class _FlashcardScreenState extends State<FlashcardScreen>
                           : Colors.grey[300],
                     ),
                   ),
-                  // Card
                   Expanded(
                     child: GestureDetector(
                       onTap: _flipCard,
@@ -209,26 +213,26 @@ class _FlashcardScreenState extends State<FlashcardScreen>
                         switchOutCurve: Curves.easeInCubic,
                         transitionBuilder:
                             (Widget child, Animation<double> animation) {
-                              final isIncoming =
-                                  child.key == ValueKey(_cardKey);
-                              final offset = _slidingForward
-                                  ? (isIncoming
-                                        ? const Offset(1.0, 0.0)
-                                        : const Offset(-1.0, 0.0))
-                                  : (isIncoming
-                                        ? const Offset(-1.0, 0.0)
-                                        : const Offset(1.0, 0.0));
-                              return SlideTransition(
-                                position: Tween<Offset>(
-                                  begin: offset,
-                                  end: Offset.zero,
-                                ).animate(animation),
-                                child: FadeTransition(
-                                  opacity: animation,
-                                  child: child,
-                                ),
-                              );
-                            },
+                          final isIncoming =
+                              child.key == ValueKey(_cardKey);
+                          final offset = _slidingForward
+                              ? (isIncoming
+                                    ? const Offset(1.0, 0.0)
+                                    : const Offset(-1.0, 0.0))
+                              : (isIncoming
+                                    ? const Offset(-1.0, 0.0)
+                                    : const Offset(1.0, 0.0));
+                          return SlideTransition(
+                            position: Tween<Offset>(
+                              begin: offset,
+                              end: Offset.zero,
+                            ).animate(animation),
+                            child: FadeTransition(
+                              opacity: animation,
+                              child: child,
+                            ),
+                          );
+                        },
                         child: KeyedSubtree(
                           key: ValueKey(_cardKey),
                           child: AnimatedBuilder(
@@ -257,7 +261,6 @@ class _FlashcardScreenState extends State<FlashcardScreen>
                       ),
                     ),
                   ),
-                  // Right arrow
                   IconButton(
                     onPressed: _currentIndex < widget.chapter.words.length - 1
                         ? _nextCard
@@ -273,8 +276,8 @@ class _FlashcardScreenState extends State<FlashcardScreen>
                 ],
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

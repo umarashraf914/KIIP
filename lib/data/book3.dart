@@ -4,7 +4,7 @@ final book3 = VocabularyBook(
   title: 'KIIP Book 3',
   subtitle: '한국어와 한국문화 중급 1',
   chapters: [
-    VocabularyChapter(title: 'Chapter 1: 대인 관계 (Interpersonal Relationships)', words: [
+    VocabularyChapter(title: 'Chapter 1: 대인 관계', words: [
       VocabularyWord(korean: '공감대가 없다', english: 'Have no common ground'),
       VocabularyWord(korean: '사이가 멀어지다', english: 'To become distant'),
       VocabularyWord(korean: '연락이 끊기다', english: 'To lose contact'),
@@ -41,7 +41,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '옮기다', english: 'To move/transfer'),
       VocabularyWord(korean: '대부분', english: 'Mostly/For the most part'),
     ]),
-    VocabularyChapter(title: 'Chapter 2: 성격 (Personality)', words: [
+    VocabularyChapter(title: 'Chapter 2: 성격', words: [
       VocabularyWord(korean: '외향적이다', english: 'To be extroverted'),
       VocabularyWord(korean: '내성적이다', english: 'To be introverted'),
       VocabularyWord(korean: '적극적이다', english: 'To be active/proactive'),
@@ -69,7 +69,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '달라지다', english: 'To become different/change'),
       VocabularyWord(korean: '눈을 흘기다', english: 'To glare'),
     ]),
-    VocabularyChapter(title: 'Chapter 3: 지역 복지 서비스 (Community Welfare Services)', words: [
+    VocabularyChapter(title: 'Chapter 3: 지역 복지 서비스', words: [
       VocabularyWord(korean: '상담을 받다', english: 'To receive counseling'),
       VocabularyWord(korean: '통번역 서비스를 받다', english: 'To receive interpretation/translation services'),
       VocabularyWord(korean: '구직/창업 상담을 받다', english: 'To receive job seeking/business start-up counseling'),
@@ -90,7 +90,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '활용되다', english: 'To be utilized'),
       VocabularyWord(korean: '고충', english: 'Difficulty/Problem'),
     ]),
-    VocabularyChapter(title: 'Chapter 4: 교환과 환불 (Exchanges and Refunds)', words: [
+    VocabularyChapter(title: 'Chapter 4: 교환과 환불', words: [
       VocabularyWord(korean: '사이즈가 작다', english: 'The size is small'),
       VocabularyWord(korean: '색상이 다르다', english: 'The color is different'),
       VocabularyWord(korean: '바지가 헐렁하다', english: 'The pants are loose'),
@@ -128,7 +128,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '세일 상품', english: 'Sale item'),
       VocabularyWord(korean: '소비자', english: 'Consumer'),
     ]),
-    VocabularyChapter(title: 'Chapter 5: 소비와 절약 (Consumption and Saving)', words: [
+    VocabularyChapter(title: 'Chapter 5: 소비와 절약', words: [
       VocabularyWord(korean: '지출', english: 'Expense/Spending'),
       VocabularyWord(korean: '축의금', english: 'Congratulatory money (for weddings)'),
       VocabularyWord(korean: '식비', english: 'Food expenses'),
@@ -170,7 +170,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '차지하다', english: 'To occupy/take up'),
       VocabularyWord(korean: '한편', english: 'Meanwhile/On the other hand'),
     ]),
-    VocabularyChapter(title: 'Chapter 6: 주거 환경 (Residential Environment)', words: [
+    VocabularyChapter(title: 'Chapter 6: 주거 환경', words: [
       VocabularyWord(korean: '빌딩 숲', english: 'Forest of buildings'),
       VocabularyWord(korean: '산업 단지', english: 'Industrial complex'),
       VocabularyWord(korean: '안전하다', english: 'To be safe'),
@@ -215,7 +215,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '염소', english: 'Goat'),
       VocabularyWord(korean: '풀', english: 'Grass'),
     ]),
-    VocabularyChapter(title: 'Chapter 7: 문화생활 (Cultural Life)', words: [
+    VocabularyChapter(title: 'Chapter 7: 문화생활', words: [
       VocabularyWord(korean: '공연', english: 'Performance'),
       VocabularyWord(korean: '뮤지컬', english: 'Musical'),
       VocabularyWord(korean: '연극', english: 'Play/Theater'),
@@ -265,7 +265,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '박물관', english: 'Museum'),
       VocabularyWord(korean: '경험이 쌓이다', english: 'To gain experience'),
     ]),
-    VocabularyChapter(title: 'Chapter 8: 음식과 요리 (Food and Cooking)', words: [
+    VocabularyChapter(title: 'Chapter 8: 음식과 요리', words: [
       VocabularyWord(korean: '고추장', english: 'Gochujang (red chili paste)'),
       VocabularyWord(korean: '간장', english: 'Soy sauce'),
       VocabularyWord(korean: '된장', english: 'Doenjang (soybean paste)'),
@@ -310,7 +310,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '둘이 먹다가 하나가 죽어도 모른다', english: '(Idiom) So delicious you wouldn\'t notice if someone died next to you'),
       VocabularyWord(korean: '식용유를 두르다', english: 'To put cooking oil on a pan'),
     ]),
-    VocabularyChapter(title: 'Chapter 9: 고장과 수리 (Breakdown and Repair)', words: [
+    VocabularyChapter(title: 'Chapter 9: 고장과 수리', words: [
       VocabularyWord(korean: '고장이 나다', english: 'To break down'),
       VocabularyWord(korean: '하수구가 막히다', english: 'The drain is clogged'),
       VocabularyWord(korean: '변기가 막히다', english: 'The toilet is clogged'),
@@ -355,7 +355,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '물다', english: 'To bite'),
       VocabularyWord(korean: '이물질', english: 'Foreign substance'),
     ]),
-    VocabularyChapter(title: 'Chapter 10: 취업 (Getting a Job)', words: [
+    VocabularyChapter(title: 'Chapter 10: 취업', words: [
       VocabularyWord(korean: '학원 강사', english: 'Academy instructor'),
       VocabularyWord(korean: '다문화 언어 강사', english: 'Multicultural language instructor'),
       VocabularyWord(korean: '편의점 아르바이트', english: 'Convenience store part-time job'),
@@ -388,7 +388,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '사본', english: 'Copy/Duplicate'),
       VocabularyWord(korean: '자격증', english: 'License/Certificate'),
     ]),
-    VocabularyChapter(title: 'Chapter 11: 부동산 (Real Estate)', words: [
+    VocabularyChapter(title: 'Chapter 11: 부동산', words: [
       VocabularyWord(korean: '주택', english: 'House/Housing'),
       VocabularyWord(korean: '아파트', english: 'Apartment'),
       VocabularyWord(korean: '오피스텔', english: 'Officetel (studio apartment)'),
@@ -419,7 +419,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '특약 사항', english: 'Special contract terms'),
       VocabularyWord(korean: '풀 옵션', english: 'Full option'),
     ]),
-    VocabularyChapter(title: 'Chapter 12: 전통 명절 (Traditional Holidays)', words: [
+    VocabularyChapter(title: 'Chapter 12: 전통 명절', words: [
       VocabularyWord(korean: '설날', english: 'Seollal (Korean New Year\'s Day)'),
       VocabularyWord(korean: '정월 대보름', english: 'Jeongwol Daeboreum (first full moon of the lunar year)'),
       VocabularyWord(korean: '추석', english: 'Chuseok (Korean Thanksgiving Day)'),
@@ -457,7 +457,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '설빔을 입다', english: 'To wear new year\'s clothes'),
       VocabularyWord(korean: '세뱃돈을 받다', english: 'To receive new year\'s money'),
     ]),
-    VocabularyChapter(title: 'Chapter 13: 직장 생활 (Work Life)', words: [
+    VocabularyChapter(title: 'Chapter 13: 직장 생활', words: [
       VocabularyWord(korean: '업무', english: 'Work/Duty'),
       VocabularyWord(korean: '지시', english: 'Instruction/Order'),
       VocabularyWord(korean: '작성하다', english: 'To write up/prepare'),
@@ -504,7 +504,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '책임감', english: 'Sense of responsibility'),
       VocabularyWord(korean: '원만하다', english: 'To be amicable/smooth'),
     ]),
-    VocabularyChapter(title: 'Chapter 14: 인터넷과 스마트폰 (Internet and Smartphone)', words: [
+    VocabularyChapter(title: 'Chapter 14: 인터넷과 스마트폰', words: [
       VocabularyWord(korean: '정보를 검색하다', english: 'To search for information'),
       VocabularyWord(korean: '인터넷 뱅킹을 하다', english: 'To do internet banking'),
       VocabularyWord(korean: '인터넷 쇼핑을 하다', english: 'To do internet shopping'),
@@ -554,7 +554,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '지혜', english: 'Wisdom'),
       VocabularyWord(korean: '활용하다', english: 'To utilize'),
     ]),
-    VocabularyChapter(title: 'Chapter 15: 고민과 상담 (Worries and Counseling)', words: [
+    VocabularyChapter(title: 'Chapter 15: 고민과 상담', words: [
       VocabularyWord(korean: '인간관계', english: 'Human relations'),
       VocabularyWord(korean: '성격이 안 맞다', english: 'Personalities don\'t match'),
       VocabularyWord(korean: '국적 취득', english: 'Acquisition of nationality'),
@@ -590,7 +590,7 @@ final book3 = VocabularyBook(
       VocabularyWord(korean: '의심하다', english: 'To doubt/suspect'),
       VocabularyWord(korean: '보고되다', english: 'To be reported'),
     ]),
-    VocabularyChapter(title: 'Chapter 16: 기후와 날씨 (Climate and Weather)', words: [
+    VocabularyChapter(title: 'Chapter 16: 기후와 날씨', words: [
       VocabularyWord(korean: '체감 온도', english: 'Sensible temperature/Wind chill'),
       VocabularyWord(korean: '습도', english: 'Humidity'),
       VocabularyWord(korean: '비 올 확률', english: 'Probability of rain'),

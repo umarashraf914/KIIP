@@ -4,7 +4,7 @@ final book1 = VocabularyBook(
   title: 'KIIP Book 1',
   subtitle: '한국어와 한국문화 기초',
   chapters: [
-    VocabularyChapter(title: 'Chapter 1: 안녕하세요? (Greetings & Introductions)', words: [
+    VocabularyChapter(title: 'Chapter 1: 안녕하세요?', words: [
       VocabularyWord(korean: '이름', english: 'Name'),
       VocabularyWord(korean: '직업', english: 'Job/Occupation'),
       VocabularyWord(korean: '국적', english: 'Nationality'),
@@ -29,7 +29,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '영어', english: 'English (Language)'),
       VocabularyWord(korean: '한국어', english: 'Korean (Language)'),
     ]),
-    VocabularyChapter(title: 'Chapter 2: 방에 책상이 있어요 (Objects & Places)', words: [
+    VocabularyChapter(title: 'Chapter 2: 방에 책상이 있어요', words: [
       VocabularyWord(korean: '회사', english: 'Company'),
       VocabularyWord(korean: '기숙사', english: 'Dormitory'),
       VocabularyWord(korean: '책상', english: 'Desk'),
@@ -60,7 +60,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '옷장', english: 'Wardrobe'),
       VocabularyWord(korean: '그리고', english: 'And'),
     ]),
-    VocabularyChapter(title: 'Chapter 3: 한국어를 배워요 (Daily Life & Adjectives)', words: [
+    VocabularyChapter(title: 'Chapter 3: 한국어를 배워요', words: [
       VocabularyWord(korean: '싸다', english: 'Cheap'),
       VocabularyWord(korean: '비싸다', english: 'Expensive'),
       VocabularyWord(korean: '많다', english: 'Many/Plenty'),
@@ -103,7 +103,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '병원', english: 'Hospital'),
       VocabularyWord(korean: '약국', english: 'Pharmacy'),
     ]),
-    VocabularyChapter(title: 'Chapter 4: 라흐만 씨가 식당에 가요 (Places & Activities)', words: [
+    VocabularyChapter(title: 'Chapter 4: 라흐만 씨가 식당에 가요', words: [
       VocabularyWord(korean: '시장', english: 'Market'),
       VocabularyWord(korean: '마트', english: 'Mart'),
       VocabularyWord(korean: '영화관', english: 'Cinema'),
@@ -129,7 +129,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '문화 센터', english: 'Cultural Center'),
       VocabularyWord(korean: '배우다', english: 'Learn'),
     ]),
-    VocabularyChapter(title: 'Chapter 5: 오늘은 5월 5일이에요 (Dates & Numbers (Sino-Korean))', words: [
+    VocabularyChapter(title: 'Chapter 5: 오늘은 5월 5일이에요', words: [
       VocabularyWord(korean: '몇월', english: 'Which Month'),
       VocabularyWord(korean: '며칠', english: 'What Date'),
       VocabularyWord(korean: '영/공', english: 'Zero'),
@@ -164,7 +164,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '(3)층 (17)호', english: '3rd Floor, Room 17'),
       VocabularyWord(korean: '명함', english: 'Business Card'),
     ]),
-    VocabularyChapter(title: 'Chapter 6: 9시부터 6시까지 일해요 (Time & Numbers (Native Korean))', words: [
+    VocabularyChapter(title: 'Chapter 6: 9시부터 6시까지 일해요', words: [
       VocabularyWord(korean: '영/공', english: 'Zero'),
       VocabularyWord(korean: '하나', english: 'One'),
       VocabularyWord(korean: '둘', english: 'Two'),
@@ -207,7 +207,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '퇴근하다', english: 'Leave Work'),
       VocabularyWord(korean: '테니스', english: 'Tennis'),
     ]),
-    VocabularyChapter(title: 'Chapter 7: 김치찌개 하나 주세요 (Food & Restaurants)', words: [
+    VocabularyChapter(title: 'Chapter 7: 김치찌개 하나 주세요', words: [
       VocabularyWord(korean: '분식집', english: 'Snack Bar'),
       VocabularyWord(korean: '김밥', english: 'Kimbap'),
       VocabularyWord(korean: '떡볶이', english: 'Tteokbokki'),
@@ -247,7 +247,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '불고기 3인분 주세요', english: 'Three Servings of Bulgogi, Please'),
       VocabularyWord(korean: '물 좀 주세요', english: 'Please Give Me Some Water'),
     ]),
-    VocabularyChapter(title: 'Chapter 8: 칫솔하고 치약을 삽니다 (Counters & Hobbies)', words: [
+    VocabularyChapter(title: 'Chapter 8: 칫솔하고 치약을 삽니다', words: [
       VocabularyWord(korean: '대', english: 'Counter for electronics/cars'),
       VocabularyWord(korean: '잔', english: 'Cup (counter)'),
       VocabularyWord(korean: '장', english: 'Sheet (counter)'),
@@ -283,7 +283,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '아르바이트를 하다', english: 'Do part time job'),
       VocabularyWord(korean: '한국어를 배우다', english: 'Learn Korean'),
     ]),
-    VocabularyChapter(title: 'Chapter 9: 지난 주말에 친구를 만났어요 (Weekend Activities)', words: [
+    VocabularyChapter(title: 'Chapter 9: 지난 주말에 친구를 만났어요', words: [
       VocabularyWord(korean: '공원', english: 'Park'),
       VocabularyWord(korean: '자전거를 타다', english: 'Ride a bicycle'),
       VocabularyWord(korean: '공놀이를 하다', english: 'Play ball games'),
@@ -310,7 +310,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '그렇지만', english: 'However'),
       VocabularyWord(korean: '즐겁다', english: 'Joyful/Enjoyable'),
     ]),
-    VocabularyChapter(title: 'Chapter 10: 아버지는 요리를 잘하세요 (Family & Honorifics)', words: [
+    VocabularyChapter(title: 'Chapter 10: 아버지는 요리를 잘하세요', words: [
       VocabularyWord(korean: '할머니', english: 'Grandmother'),
       VocabularyWord(korean: '할아버지', english: 'Grandfather'),
       VocabularyWord(korean: '외할머니', english: 'Maternal grandmother'),
@@ -337,7 +337,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '부모님', english: 'Parents'),
       VocabularyWord(korean: '고등학생', english: 'High school student'),
     ]),
-    VocabularyChapter(title: 'Chapter 11: 어버이날에 부모님께 꽃을 드려요 (Gifts & Celebrations)', words: [
+    VocabularyChapter(title: 'Chapter 11: 어버이날에 부모님께 꽃을 드려요', words: [
       VocabularyWord(korean: '주다', english: 'Give'),
       VocabularyWord(korean: '보내다', english: 'Send'),
       VocabularyWord(korean: '받다', english: 'Receive'),
@@ -356,7 +356,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '어린이날', english: 'Children\'s Day'),
       VocabularyWord(korean: '기분이 좋다', english: 'Feel good/happy'),
     ]),
-    VocabularyChapter(title: 'Chapter 12: 이번 휴가에 뭐 할 거예요? (Holidays & Leisure)', words: [
+    VocabularyChapter(title: 'Chapter 12: 이번 휴가에 뭐 할 거예요?', words: [
       VocabularyWord(korean: '휴일', english: 'Holiday'),
       VocabularyWord(korean: '공원에서 농구를 하다', english: 'Play basketball at the park'),
       VocabularyWord(korean: '컴퓨터 게임을 하다', english: 'Play computer games'),
@@ -387,7 +387,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '빨리', english: 'Quickly'),
       VocabularyWord(korean: '안산', english: 'Ansan (city in Korea)'),
     ]),
-    VocabularyChapter(title: 'Chapter 13: 버스로 공항에 가요 (Transportation)', words: [
+    VocabularyChapter(title: 'Chapter 13: 버스로 공항에 가요', words: [
       VocabularyWord(korean: '자동차', english: 'Car'),
       VocabularyWord(korean: '버스', english: 'Bus'),
       VocabularyWord(korean: '택시', english: 'Taxi'),
@@ -410,7 +410,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '전망대', english: 'Observatory'),
       VocabularyWord(korean: '케이블카', english: 'Cable car'),
     ]),
-    VocabularyChapter(title: 'Chapter 14: 저녁 7시에 만날까요? (Appointments & Excuses)', words: [
+    VocabularyChapter(title: 'Chapter 14: 저녁 7시에 만날까요?', words: [
       VocabularyWord(korean: '모임', english: 'Meeting/gathering'),
       VocabularyWord(korean: '직장 모임', english: 'Work gathering'),
       VocabularyWord(korean: '약속하다', english: 'Make a promise/appointment'),
@@ -429,7 +429,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '회식을 하다', english: 'Have a company dinner'),
       VocabularyWord(korean: '답장하다', english: 'Reply'),
     ]),
-    VocabularyChapter(title: 'Chapter 15: 오늘 날씨가 정말 덥네요 (Weather & Seasons)', words: [
+    VocabularyChapter(title: 'Chapter 15: 오늘 날씨가 정말 덥네요', words: [
       VocabularyWord(korean: '새', english: 'New/Bird'),
       VocabularyWord(korean: '날씨', english: 'Weather'),
       VocabularyWord(korean: '계절', english: 'Season'),
@@ -458,7 +458,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '매우', english: 'Very'),
       VocabularyWord(korean: '스키를 타다', english: 'Skiing'),
     ]),
-    VocabularyChapter(title: 'Chapter 16: 배가 아파서 병원에 가요 (Health & Body)', words: [
+    VocabularyChapter(title: 'Chapter 16: 배가 아파서 병원에 가요', words: [
       VocabularyWord(korean: '눈', english: 'Eye'),
       VocabularyWord(korean: '코', english: 'Nose'),
       VocabularyWord(korean: '이', english: 'Tooth'),
@@ -481,7 +481,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '비타민 시(C)', english: 'Vitamin C'),
       VocabularyWord(korean: '푹 쉬다', english: 'Rest fully/deeply'),
     ]),
-    VocabularyChapter(title: 'Chapter 17: 사진을 찍지 마세요 (Public Places & Rules)', words: [
+    VocabularyChapter(title: 'Chapter 17: 사진을 찍지 마세요', words: [
       VocabularyWord(korean: '환전하다', english: 'Exchange money'),
       VocabularyWord(korean: '주차장', english: 'Parking lot'),
       VocabularyWord(korean: '주차하다', english: 'Park a car'),
@@ -510,7 +510,7 @@ final book1 = VocabularyBook(
       VocabularyWord(korean: '설악산 국립 공원', english: 'Seoraksan National Park'),
       VocabularyWord(korean: '동물원', english: 'Zoo'),
     ]),
-    VocabularyChapter(title: 'Chapter 18: 한국 생활은 조금 힘든데 재미있어요 (Daily Conveniences)', words: [
+    VocabularyChapter(title: 'Chapter 18: 한국 생활은 조금 힘든데 재미있어요', words: [
       VocabularyWord(korean: '대중교통 수단을 이용하다', english: 'Use public transportation'),
       VocabularyWord(korean: '편하다', english: 'Comfortable'),
       VocabularyWord(korean: '택시를 잡다', english: 'Catch a taxi'),

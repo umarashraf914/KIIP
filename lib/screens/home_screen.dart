@@ -1,26 +1,15 @@
 import 'package:flutter/material.dart';
 import '../data/all_books.dart';
+import '../theme/book_colors.dart';
 import 'chapters_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  static const List<Color> bookColors = [
-    Color(0xFF4CAF50),
-    Color(0xFF2196F3),
-    Color(0xFFFF9800),
-    Color(0xFF9C27B0),
-  ];
-
-  static const List<String> bookImages = [
-    'lib/assets/images/Book1.jpg',
-    'lib/assets/images/Book2.jpg',
-    'lib/assets/images/Book3.jpg',
-    'lib/assets/images/Book4.jpg',
-  ];
-
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -28,34 +17,33 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        foregroundColor: Colors.white,
+        backgroundColor: colorScheme.primary,
+        foregroundColor: colorScheme.onPrimary,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Styled header card
             Container(
               width: double.infinity,
               margin: const EdgeInsets.only(bottom: 16),
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
               decoration: BoxDecoration(
-                color: Colors.teal.shade50,
+                color: colorScheme.primaryContainer.withAlpha(80),
                 borderRadius: BorderRadius.circular(14),
-                border: Border.all(color: Colors.teal.shade100),
+                border: Border.all(color: colorScheme.primaryContainer),
               ),
               child: Row(
                 children: [
-                  Icon(Icons.school, color: Colors.teal.shade700, size: 26),
+                  Icon(Icons.school, color: colorScheme.primary, size: 26),
                   const SizedBox(width: 12),
                   Text(
                     'Choose a book to study',
                     style: TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.w600,
-                      color: Colors.teal.shade800,
+                      color: colorScheme.primary,
                     ),
                   ),
                 ],
@@ -146,7 +134,6 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(width: 10),
-                              // Book cover image
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Container(
