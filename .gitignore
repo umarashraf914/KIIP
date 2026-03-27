@@ -1,6 +1,10 @@
 # Secrets
 client_secret_*.json
 *.keystore
+android/sec.json
+
+# Claude Code
+.claude/
 
 # Miscellaneous
 *.class
